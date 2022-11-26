@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    --SoftRed: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --DarkBrown: hsl(25, 47%, 15%);
+    --MediumBrown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --VeryPaleOrange: hsl(33, 100%, 98%);
+    --hover-blue:#1D8CF7;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body  {
+    box-sizing: border-box;
+    font-family: "DM Sans";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+}
+
+
+.chart-container  {
+    width: 37.5rem;
+    height: 56.7rem;
+    background-color: var(--Cream);
+    padding-top: 5rem;
+    font-size: 1.8rem;
+
+}
+
+.header-title {
+    margin-left: 1.5rem;
+}
+
+.header-value {
+    margin-left: 1.5rem;
+}
+
+.header-logo {
+    margin-right: 1.5rem;
+}
+
+.day-value {
+    display: none;
+}
+
+.chart-footer,
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.chart-footer {
+    height: 9rem;
+    width: 30.3rem;
+   
+}
+
+.chart-header {
+    width: 31.9rem;
+    height: 9.7rem;
+    background-color: var(--SoftRed);
+    border-radius: 1rem;
+    color: var(--Cream);
+    margin: 0 1.5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    
+
+}
+
+.chart-desc {
+    font-size:2.4rem;
+    font-weight: 700;
+    margin: 0 1.5rem;
+}
+
+hr {
+    color: var(--Cream); 
+    margin: 0 1.5rem;
+}
+
+
+.header-value,
+.footer-value {
+    font-weight: 700;
+    
+}
+.left .footer-title {
+    margin-top: 3rem;
+}
+
+.left .footer-value { 
+    margin-top: 1rem;
+    font-size: 3rem;
+    
+}
+
+.right .footer-value { 
+    margin-top: 1rem;
+}
+
+
+
+.footer-title {
+    font-weight:400;
+    font-size: 1.4rem;
+    color: var(--MediumBrown);
+}
+
+.right {
+    padding-top: 1rem;
+    margin-right: 1.5rem;
+}
+
+.left {
+    margin-left: 1.5rem;
+}
+
+.right .footer-value {
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: flex-end;
+    
+}
+
+
+
+.chart {
+    width: 31.3rem;
+    height: 42.1rem;
+    background-color: var(--VeryPaleOrange);
+    border-radius: 1rem; 
+    margin: 2rem 1.5rem 0 1.5rem;
+    padding: 1.5rem;
+   
+}
+
+.days {
+    height: 20rem;
+    display: flex;
+    justify-content:space-between;
+    margin:5rem 1.5rem 0 1.5rem;
+    
+    
+}
+hr {
+    margin-top: 3.2rem;
+}
+
+
+.days-value:hover {
+  background-color: var(--Cyan);
+}
+
+.days span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+
+
+.days-value {
+    width: 3.3rem;
+    background-color: brown;
+    border-radius: .5rem;    
+}
+
+.day-value {
+    width: 3.5rem;
+    height: 1.5rem;
+    padding: .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: .5rem;  
+    position: absolute;
+    left: 30px;
+    top:100px;
+
+    
+}
+
+
+
+
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-weight:400;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    color: var(--MediumBrown);
+}
+
+@media only screen and (min-width: 768px)  {
+    .chart {
+        width: 54rem;
+        height: 50rem;
+       
+    }
+    .chart-header {
+        width: 54rem;
+        height: 12.5rem;
+        background-color: var(--SoftRed);
+    border-radius: 1rem;
+    color: var(--Cream);
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+        
+    
+    }
+
+    .chart-container  {
+        width: 54rem;
+        height: 64rem;
+       
+    
+    }
+  
+
+    .chart-footer {
+        width: 46rem;
+        height: 9rem;
+        margin-top: 2rem;
+        
+    }
+    .days-value {
+        width: 5.3rem;
+          
+    }
+
+    .chart-desc,
+    .header-value {
+        font-size:3.2rem;
+        font-weight: 700;
+    }
+
+    .left .footer-value {
+        font-size:4.8rem;
+       
+    }
+
+    hr {
+        margin-top: 6.6rem;
+    }
+
+    .right {
+        padding-top: 1rem;
+        margin-right: -6rem;
+    }
+    
+    .left {
+        margin-left: 1.5rem;
+    }
+
+    .day-value {
+        width: 6rem;
+        height: 2rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        border-radius: .5rem;  
+        position: absolute;
+        left: 30px;
+        top:100px;
+    
+        
+    }
+    
+}
+
+#mon {
+    height: 3.4rem;
+}
+
+#tue {
+    height: 3.4rem;
+}
+
+#wed {
+    height: 10.4rem;
+}
+
+#thu {
+    height: 6.2rem;
+}
+
+#fri {
+    height: 2.3rem;
+}
+
+#sat {
+    height: 4.3rem;
+}
+
+#sun {
+    height: 2.5rem;
+}
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+      <div class="chart-container">
+
+    <div class="chart-header">
+      <div class="header-balance">
+        <div class="header-title">My balance</div>
+        <div class="header-value">$921.48</div>
+      </div>
+      
+      <div class="header-logo"><svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg></div>
+    </div>
+
+    <div class="chart">
+      <div class="chart-desc">Spending - Last 7 days</div>
+
+      <div class="chart-value">
+        <div class="day-value"></div>
+        <div class="days">
+            <span> <div  id="mon" class="days-value"></div><div class="title">mon</div></span>
+            <span> <div id="tue" class="days-value"></div><div class="title">tue</div></span>
+            <span> <div id="wed" class="days-value"></div><div class="title">wed</div></span>
+            <span> <div id="thu" class="days-value"></div><div class="title">thu</div></span>
+            <span> <div id="fri" class="days-value"></div><div class="title">fri</div></span>
+            <span> <div id="sat" class="days-value"></div><div class="title">sat</div></span>
+            <span> <div id="sun" class="days-value"></div><div class="title">sun</div></span>
+          
+          </div>
+      </div>
+    <hr>
+
+      <div class="chart-footer">
+        <div class="left">
+          <div class="footer-title">Total this month</div>
+          <div class="footer-value">$478.33</div>
+      </div>
+      <div class="right">
+        <div class="footer-value">+2.4%</div>
+        <div class="footer-title">from last month</div>
+      </div>
+    </div>
+    
+
+
+    </div>
+
+    </div>
+
+  
+  
+  <script type="module" src="app.js"></script>
+</body>
+</html>
